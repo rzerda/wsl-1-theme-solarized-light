@@ -1,6 +1,7 @@
 Windows Registry Editor Version 5.00
 
 ; Adapted from https://github.com/neilpa/cmd-colors-solarized/blob/master/solarized-dark.reg
+; And then adapted from https://gist.github.com/noelbundick/d7d67c1cc9cae8a1cb93240dc7bbe78c#file-solarized-dark-reg
 
 ; Registry file that maps the solarized palette to the 16 avaliable colors
 ; in a Windows command prompt. Note, hex values in the table are RGB but byte
@@ -28,22 +29,23 @@ Windows Registry Editor Version 5.00
 ;| green     | #859900 | ESC[1;32m | green     | LightGreen  | Green       | 10         | 00009985 |
 ;
 
-[HKEY_CURRENT_USER\Console\Bash on Ubuntu on Windows]
-"ColorTable00"=dword:00362b00
-"ColorTable01"=dword:00969483
-"ColorTable02"=dword:00756e58
-"ColorTable03"=dword:00a1a193
+; This path is for Ubuntu 18.04, you may need to adapt it for your environment
+[HKEY_CURRENT_USER\Console\C:_Program Files_WindowsApps_CanonicalGroupLimited.Ubuntu18.04onWindows_1804.2019.522.0_x64__79rhkp1fndgsc_ubuntu1804.exe]
+"ColorTable00"=dword:00e3f6fd
+"ColorTable01"=dword:00837b65
+"ColorTable02"=dword:00a1a193
+"ColorTable03"=dword:00756e58
 "ColorTable04"=dword:00164bcb
 "ColorTable05"=dword:00c4716c
-"ColorTable06"=dword:00837b65
-"ColorTable07"=dword:00d5e8ee
-"ColorTable08"=dword:00423607
+"ColorTable06"=dword:00969483
+"ColorTable07"=dword:00423607
+"ColorTable08"=dword:00d5e8ee
 "ColorTable09"=dword:00d28b26
 "ColorTable10"=dword:00009985
 "ColorTable11"=dword:0098a12a
 "ColorTable12"=dword:002f32dc
 "ColorTable13"=dword:008236d3
 "ColorTable14"=dword:000089b5
-"ColorTable15"=dword:00e3f6fd
+"ColorTable15"=dword:00362b00
 "ScreenColors"=dword:00000001
 "PopupColors"=dword:000000f6
